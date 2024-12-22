@@ -2,23 +2,7 @@
 
 #  Color Trace
 
-> 更新日期：2021 年 8 月 6 日
-
 这是一个将位图描摹为彩色矢量 svg 图片的程序，是一个命令行工具，使用 Python 脚本实现，运行环境 Python3.8+。
-
-## ✨ 效果
-
-以一个字帖图片为例，这是 png 格式的位图（370KB）：
-
-![位图](assets/位图.png)
-
-这是颜色数为 1 的 svg 转换结果，即只有黑色（32KB）：
-
-![矢量图-1颜色](assets/矢量图-1颜色.svg)
-
-颜色数为 3 的 svg 转换结果（190KB）：
-
-![矢量图-3颜色](assets/矢量图-3颜色.svg)
 
 ## 📝 原理
 
@@ -108,7 +92,7 @@ optional arguments:
 例如：
 
 ```
-$ python color-trace.py -i 位图.png -c 3 -o 矢量.svg
+$ python color-trace.py --stack -i assets/bitmap.png -c 3 -o output/bitmap.svg
 $ python color-trace.py -i 文件夹/*.png -c 3 -d 输出文件夹
 ```
 
@@ -133,32 +117,3 @@ $ python color-trace.py -i 文件夹/*.png -c 3 -d 输出文件夹
 看了 readme 后，怀着激动的心下载了源码，试运行，结果报错。毕竟是 2012 年用 Python3.2 写的，太古老了，Python 的许多内置函数都变了不少。
 
 想要用的话，就只能自己修了。英文源码我是看不下去，就把里面的大部分注释和变量都替换成了方便我理解的中文翻译，这样才逐渐理解了这个程序的原理，然后进行测试、修复、优化，最终可用了。Happy！
-
-
-
-## ❤ 贡献代码
-
-由于做这个程序的第一目的是给我自己用，所以就没有考虑国际化，里面的变量名大多都是中文，甚至把命令行帮助也做成了中文。考虑到方便阅读、维护，贡献代码时请使用中文作为变量、注释的首选语言。
-
-在写注释时，中文打字慢，许多部分我都是使用 [HaujetZhao/CapsWriter](https://github.com/HaujetZhao/CapsWriter) 进行语音输入辅助完成的，推荐使用。
-
-有能力的爱好者可以 fork 此 repo，翻译为英文代码。
-
-## ☕ 打赏
-
-万水千山总是情，一块几块都是情。本软件完全开源，用爱发电，如果你愿意，可以以打赏的方式支持我一下：
-
-![sponsor](assets/sponsor.svg)
-
-> 这个打赏二维码图片也是由 jpg 转成了黑色的 svg 文件，只有 55KB，Nice！
-
-
-
-## 😀 交流
-
-如果有软件方面的反馈可以提交 issues，或者加入 QQ 群：[1146626791](https://qm.qq.com/cgi-bin/qm/qr?k=DgiFh5cclAElnELH4mOxqWUBxReyEVpm&jump_from=webapi) 
-
-
-
-## 🙏 鸣谢
-
